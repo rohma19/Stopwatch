@@ -1,33 +1,54 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: #5a5353;
-    color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  background: hsl(227, 9%, 70%);
 }
-.imgContainer img {
-    width: 100%;
-    height: 400px;
-}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  width: 50vw;
+  height: 25vh;
+  margin: 100px auto;
+  padding: 60px 50px 10px;
+  text-align: center;
+  font-size: 40px;
+  background: #9a3b3b;
+  box-shadow: 15px 15px 30px #9a3b3b, -15px -15px 30px #ffffff;
+  border-radius: 40px;
+  background: #e0e0e0;
+  box-shadow: 6px -6px 8px #9d9d9d, -6px 6px 8px #ffffff;
 }
 
-.flight {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    margin-top: 30px;
-    padding: 0 20px;
+.img-container img {
+  width: 59px;
+  border-radius: 12px;
 }
 
-.flight.title {
-    font-weight: bolder;
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons > button {
+  font-size: 22px;
+  border: none;
+  background-color: #b32ea1;
+  color: white;
+  width: 110px;
+  height: 55px;
+  justify-content: space-between;
+  transition: 0.2s;
+  border-radius: 40px;
+  box-shadow: 6px -6px 8px #9d9d9d, -6px 6px 8px #ffffff;
+
+}
+
+.time {
+  width: 500px;
+}
+
+.minutes,
+.seconds,
+.milliseconds {
+  display: inline-block;
+  width: 55px;
 }
